@@ -1,0 +1,27 @@
+{% extends "base.html" %}
+
+{% block title %}test design app{% endblock %}
+
+{% block page_content %}
+
+<div class="page-header">
+    <img src = "/static/hat.svg" width="200" height="200">
+    <img src = "/static/baker.png" width="200" height="200">
+
+    <h1>Select your item</h1>
+    <h2><div class="jumbotron">
+        <p>"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod 
+        tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, 
+        quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo 
+        consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse 
+        cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat 
+        non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."</p></div>
+    </h2>
+
+    <form action="/privacy/" method="post">
+        <button name="continue" type="submit">continue</button>
+    </form>
+
+</div>   
+
+{% endblock %}
