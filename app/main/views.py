@@ -7,11 +7,11 @@ def index():
 
 @main.route('/privacy/', methods=['POST'])
 def privacy():
-    return render_template('privacy.html'
+    return render_template('privacy.html')
 
 @main.route('/basic/', methods=['POST'])
 def basic():
-    return render_template('basic.html'))
+    return render_template('basic.html')
 
 @main.route('/instructions/', methods=['POST'])
 def instructions():
