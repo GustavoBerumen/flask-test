@@ -37,7 +37,9 @@ deactivate () {
 # unset irrelevant variables
 deactivate nondestructive
 
-VIRTUAL_ENV="/home/max/Programming/flasky-test/venv"
+# quick and dirty fix for differing paths
+FLASKY_ENV="$(cd ../../.. && pwd)"
+VIRTUAL_ENV="$FLASKY_ENV/flasky-test/venv"
 export VIRTUAL_ENV
 
 _OLD_VIRTUAL_PATH="$PATH"

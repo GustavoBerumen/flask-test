@@ -29,7 +29,10 @@ end
 # unset irrelevant variables
 deactivate nondestructive
 
-set -gx VIRTUAL_ENV "/home/max/Programming/flasky-test/venv"
+# quick and dirty fix for differing paths
+FLASKY_ENV="$(cd ../../.. && pwd)"
+
+set -gx VIRTUAL_ENV "FLASKY_ENV/flasky-test/venv"
 
 set -gx _OLD_VIRTUAL_PATH $PATH
 set -gx PATH "$VIRTUAL_ENV/bin" $PATH
